@@ -44,7 +44,6 @@ header {
 }
 ul {
   display: flex;
-  list-style: none;
 }
 li {
   padding: 0.5rem;
@@ -52,7 +51,5 @@ li {
 a {
   text-transform: uppercase;
   font-weight: bold;
-  text-decoration: none;
-  color: inherit;
 }
 </style>
