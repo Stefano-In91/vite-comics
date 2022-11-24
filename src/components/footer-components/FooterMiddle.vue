@@ -53,23 +53,21 @@ export default {
 </script>
 
 <template>
-  <footer>
-    <div class="footer-middle">
-      <div class="container">
-        <div class="lists">
-          <div v-for="list in lists" class="list">
-            <h3>{{ list.title }}</h3>
-            <ul>
-              <li v-for="link in list.links">
-                <a href="">{{ link }}</a>
-              </li>
-            </ul>
-          </div>
+  <div class="footer-middle">
+    <div class="container">
+      <div class="lists">
+        <div v-for="list in lists" class="list">
+          <h3>{{ list.title }}</h3>
+          <ul>
+            <li v-for="link in list.links">
+              <a href="">{{ link }}</a>
+            </li>
+          </ul>
         </div>
-        <img src="src/assets/dc-logo-bg.png" alt="logo" />
       </div>
+      <img src="src/assets/dc-logo-bg.png" alt="logo" />
     </div>
-  </footer>
+  </div>
 </template>
 
 <style scoped>
