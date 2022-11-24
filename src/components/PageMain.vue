@@ -5,7 +5,15 @@ export default {
 </script>
 
 <template>
-  <h1>Main</h1>
+  <main>
+    <div class="container">Insert shit here</div>
+  </main>
 </template>
 
-<style scoped></style>
+<style scoped>
+main {
+  background-color: var(--primary-color);
+  padding: 3rem;
+  color: white;
+}
+</style>
