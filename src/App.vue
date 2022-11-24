@@ -1,17 +1,25 @@
 <script>
-import PageTitle from "./components/PageTitle.vue";
+import PageHeader from "./components/PageHeader.vue";
+import PageMain from "./components/PageMain.vue";
+import PageFooter from "./components/PageFooter.vue";
 
 export default {
   components: {
-    PageTitle,
+    PageHeader,
+    PageMain,
+    PageFooter,
   },
 };
 </script>
 
 <template>
   <div>
-    <PageTitle />
+    <PageHeader />
+    <PageMain />
+    <PageFooter />
   </div>
 </template>
 
-<style scoped></style>
+<style>
+@import "./style/global.css";
+</style>

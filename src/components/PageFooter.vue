@@ -1,15 +1,11 @@
 <script>
 export default {
-  data() {
-    return {
-      title: "Titolazzo",
-    };
-  },
+  name: "PageFooter",
 };
 </script>
 
 <template>
-  <h1>{{ title }}</h1>
+  <h1>Footer</h1>
 </template>
 
 <style scoped></style>
