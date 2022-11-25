@@ -1,21 +1,12 @@
 <script>
+import links from "../assets/jsons/header-navbar-links.json";
+
 export default {
   name: "PageHeader",
   data() {
     return {
       logoImg: "/src/assets/dc-logo.png",
-      links: [
-        { label: "characters", href: "#" },
-        { label: "comics", href: "#" },
-        { label: "movies", href: "#" },
-        { label: "tv", href: "#" },
-        { label: "games", href: "#" },
-        { label: "collectibles", href: "#" },
-        { label: "videos", href: "#" },
-        { label: "fans", href: "#" },
-        { label: "news", href: "#" },
-        { label: "shop", href: "#" },
-      ],
+      links,
     };
   },
 };

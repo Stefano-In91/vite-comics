@@ -82,10 +82,11 @@ export default {
         margin-right: 1rem;
       }
     }
-  }
-  h3 {
-    text-transform: uppercase;
-    color: var(--blue-color);
+
+    h3 {
+      text-transform: uppercase;
+      color: var(--blue-color);
+    }
   }
 }
 </style>

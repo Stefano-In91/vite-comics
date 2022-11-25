@@ -1,35 +1,11 @@
 <script>
+import items from "../../assets/jsons/footer-top-items.json";
+
 export default {
   name: "FooterTop",
   data() {
     return {
-      items: [
-        {
-          image: "src/assets/buy-comics-digital-comics.png",
-          title: "digital comics",
-          href: "#",
-        },
-        {
-          image: "src/assets/buy-comics-merchandise.png",
-          title: "dc merchandise",
-          href: "#",
-        },
-        {
-          image: "src/assets/buy-comics-subscriptions.png",
-          title: "subscription",
-          href: "#",
-        },
-        {
-          image: "src/assets/buy-comics-shop-locator.png",
-          title: "comic shop locator",
-          href: "#",
-        },
-        {
-          image: "src/assets/buy-dc-power-visa.svg",
-          title: "dc power visa",
-          href: "#",
-        },
-      ],
+      items,
     };
   },
 };
