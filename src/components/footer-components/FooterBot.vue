@@ -47,12 +47,12 @@ export default {
 <style lang="scss" scoped>
 .footer-bot {
   background-color: var(--secondary-color);
+  padding: 1rem;
 
   .container {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 1rem;
   }
   button {
     color: white;

@@ -48,7 +48,6 @@ export default {
   .container {
     display: flex;
     justify-content: space-between;
-    padding: 1rem;
   }
   .card {
     display: flex;
