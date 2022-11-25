@@ -33,23 +33,26 @@ export default {
   </header>
 </template>
 
-<style scoped>
+<style lang="scss" scoped>
 header {
   padding: 1rem;
-}
-.container {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-}
-ul {
-  display: flex;
-}
-li {
-  padding: 0.5rem;
-}
-a {
-  text-transform: uppercase;
-  font-weight: bold;
+
+  .container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  ul {
+    display: flex;
+
+    li {
+      padding: 0.5rem;
+    }
+
+    a {
+      text-transform: uppercase;
+      font-weight: bold;
+    }
+  }
 }
 </style>

@@ -44,40 +44,43 @@ export default {
   </div>
 </template>
 
-<style scoped>
+<style lang="scss" scoped>
 .footer-bot {
   background-color: var(--secondary-color);
-}
-.container {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  padding: 1rem;
-}
-button {
-  color: white;
-  text-transform: uppercase;
-  font-size: 1rem;
-  font-weight: 700;
-  font-family: inherit;
-  background-color: inherit;
-  border: 1px solid;
-  border-color: var(--blue-color);
-  padding: 1rem;
-}
-.links {
-  display: flex;
-  align-items: center;
-}
-.links * {
-  line-height: 2rem;
-  vertical-align: middle;
-}
-.links *:not(:last-child) {
-  margin-right: 1rem;
-}
-h3 {
-  text-transform: uppercase;
-  color: var(--blue-color);
+
+  .container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem;
+  }
+  button {
+    color: white;
+    text-transform: uppercase;
+    font-size: 1rem;
+    font-weight: 700;
+    font-family: inherit;
+    background-color: inherit;
+    border: 1px solid;
+    border-color: var(--blue-color);
+    padding: 1rem;
+  }
+  .links {
+    display: flex;
+    align-items: center;
+
+    & * {
+      line-height: 2rem;
+      vertical-align: middle;
+
+      &:not(:last-child) {
+        margin-right: 1rem;
+      }
+    }
+  }
+  h3 {
+    text-transform: uppercase;
+    color: var(--blue-color);
+  }
 }
 </style>

@@ -41,29 +41,30 @@ export default {
   </div>
 </template>
 
-<style scoped>
+<style lang="scss" scoped>
 .footer-top {
   background-color: var(--blue-color);
   padding: 1rem;
-}
-.container {
-  display: flex;
-  justify-content: space-between;
-  padding: 1rem;
-}
-.card {
-  display: flex;
-  align-items: center;
-  color: white;
-}
-img {
-  height: 100px;
-}
-.card:last-child img {
-  height: 75px;
-}
-a {
-  text-transform: uppercase;
-  margin-left: 0.5rem;
+  .container {
+    display: flex;
+    justify-content: space-between;
+    padding: 1rem;
+  }
+  .card {
+    display: flex;
+    align-items: center;
+    color: white;
+
+    img {
+      height: 100px;
+    }
+    &:last-child img {
+      height: 75px;
+    }
+    a {
+      text-transform: uppercase;
+      margin-left: 0.5rem;
+    }
+  }
 }
 </style>

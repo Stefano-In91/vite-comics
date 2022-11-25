@@ -70,13 +70,7 @@ export default {
   </div>
 </template>
 
-<style scoped>
-.container {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  height: 100%;
-}
+<style lang="scss" scoped>
 .footer-middle {
   background-image: url("src/assets/footer-bg.jpg");
   background-position: center;
@@ -85,21 +79,30 @@ export default {
   height: 400px;
   overflow: hidden;
   color: white;
-}
-.lists {
-  display: flex;
-  flex-direction: column;
-  flex-wrap: wrap;
-  height: 70%;
-}
-.list {
-  margin-right: 1rem;
-}
-h3 {
-  margin: 0.5rem 0;
-  text-transform: uppercase;
-}
-li a {
-  color: gray;
+
+  .container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 100%;
+  }
+  .lists {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    height: 70%;
+
+    .list {
+      margin-right: 1rem;
+
+      h3 {
+        margin: 0.5rem 0;
+        text-transform: uppercase;
+      }
+      li a {
+        color: gray;
+      }
+    }
+  }
 }
 </style>

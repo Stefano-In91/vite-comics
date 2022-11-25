@@ -10,7 +10,7 @@ export default {
   </main>
 </template>
 
-<style scoped>
+<style lang="scss" scoped>
 main {
   background-color: var(--primary-color);
   padding: 3rem;
