@@ -5,7 +5,7 @@ export default {
   name: "PageHeader",
   data() {
     return {
-      logoImg: "/src/assets/dc-logo.png",
+      logoImg: "/src/assets/img/dc-logo.png",
       links,
     };
   },

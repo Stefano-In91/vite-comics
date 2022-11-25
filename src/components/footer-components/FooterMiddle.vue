@@ -5,8 +5,8 @@ export default {
   name: "FooterMiddle",
   data() {
     return {
-      backgroundImage: "/src/assets/footer-bg.jpg",
-      logoImageBg: "/src/assets/dc-logo-bg.png",
+      backgroundImage: "/src/assets/img/footer-bg.jpg",
+      logoImageBg: "/src/assets/img/dc-logo-bg.png",
       lists,
     };
   },

@@ -1,0 +1,27 @@
+[
+  {
+    "name": "facebook",
+    "image": "src/assets/img/footer-facebook.png",
+    "href": "#"
+  },
+  {
+    "name": "twitter",
+    "image": "src/assets/img/footer-twitter.png",
+    "href": "#"
+  },
+  {
+    "name": "youtube",
+    "image": "src/assets/img/footer-youtube.png",
+    "href": "#"
+  },
+  {
+    "name": "pinterest",
+    "image": "src/assets/img/footer-pinterest.png",
+    "href": "#"
+  },
+  {
+    "name": "periscope",
+    "image": "src/assets/img/footer-periscope.png",
+    "href": "#"
+  }
+]

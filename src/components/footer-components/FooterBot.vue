@@ -1,35 +1,11 @@
 <script>
+import links from "../../assets/jsons/footer-bot-links.json";
+
 export default {
   name: "FooterBot",
   data() {
     return {
-      links: [
-        {
-          name: "facebook",
-          image: "src/assets/footer-facebook.png",
-          href: "#",
-        },
-        {
-          name: "twitter",
-          image: "src/assets/footer-twitter.png",
-          href: "#",
-        },
-        {
-          name: "youtube",
-          image: "src/assets/footer-youtube.png",
-          href: "#",
-        },
-        {
-          name: "pinterest",
-          image: "src/assets/footer-pinterest.png",
-          href: "#",
-        },
-        {
-          name: "periscope",
-          image: "src/assets/footer-periscope.png",
-          href: "#",
-        },
-      ],
+      links,
     };
   },
 };

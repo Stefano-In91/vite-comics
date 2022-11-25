@@ -10,7 +10,7 @@ export default {
   data() {
     return {
       comics,
-      currentSeriesImg: "src/assets/jumbotron.jpg",
+      currentSeriesImg: "src/assets/img/jumbotron.jpg",
     };
   },
 };
