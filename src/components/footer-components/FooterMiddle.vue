@@ -3,47 +3,52 @@ export default {
   name: "FooterMiddle",
   data() {
     return {
+      backgroundImage: "/src/assets/footer-bg.jpg",
+      logoImageBg: "/src/assets/dc-logo-bg.png",
       lists: [
         {
           title: "DC Comics",
           links: [
-            "Characters",
-            "Comics",
-            "Movies",
-            "TV",
-            "Games",
-            "Videos",
-            "News",
+            { label: "Characters", href: "#" },
+            { label: "Comics", href: "#" },
+            { label: "Movies", href: "#" },
+            { label: "TV", href: "#" },
+            { label: "Games", href: "#" },
+            { label: "Videos", href: "#" },
+            { label: "News", href: "#" },
           ],
         },
         {
           title: "Shop",
-          links: ["Shop DC", "Shop DC Collectibles"],
+          links: [
+            { label: "Shop DC", href: "#" },
+            { label: "Shop DC Collectibles", href: "#" },
+          ],
         },
         {
           title: "DC",
           links: [
-            "Terms Of Use",
-            "Privacy Policy",
-            "Ad Choices",
-            "Advertising",
-            "Jobs",
-            "Subscriptions",
-            "Talent Workshops",
-            "CPSC Certificates",
-            "Ratings",
-            "Shop Help",
-            "Contact Us",
+            { label: "Terms Of Use", href: "#" },
+            { label: "Privacy Policy", href: "#" },
+            { label: "Ad Choices", href: "#" },
+            { label: "Advertising", href: "#" },
+            { label: "Jobs", href: "#" },
+            { label: "Subscriptions", href: "#" },
+            { label: "Talent Workshops", href: "#" },
+            { label: "CPSC Certificates", href: "#" },
+            { label: "Ratings", href: "#" },
+            { label: "Shop Help", href: "#" },
+            { label: "Contact Us", href: "#" },
           ],
         },
         {
           title: "Sites",
           links: [
-            "DC",
-            "MAD Magazine",
-            "DC Kids",
-            "DC Universe",
-            "DC Power Visa",
+            { label: "DC", href: "#" },
+            { label: "MAD Magazine", href: "#" },
+            { label: "DC Kids", href: "#" },
+            { label: "DC Universe", href: "#" },
+            { label: "DC Power Visa", href: "#" },
           ],
         },
       ],
@@ -53,26 +58,28 @@ export default {
 </script>
 
 <template>
-  <div class="footer-middle">
+  <div
+    class="footer-middle"
+    :style="`background-image: url(${backgroundImage})`"
+  >
     <div class="container">
       <div class="lists">
         <div v-for="list in lists" class="list">
           <h3>{{ list.title }}</h3>
           <ul>
             <li v-for="link in list.links">
-              <a href="">{{ link }}</a>
+              <a :href="link.href">{{ link.label }}</a>
             </li>
           </ul>
         </div>
       </div>
-      <img src="src/assets/dc-logo-bg.png" alt="logo" />
+      <img :src="logoImageBg" alt="logo" />
     </div>
   </div>
 </template>
 
 <style lang="scss" scoped>
 .footer-middle {
-  background-image: url("src/assets/footer-bg.jpg");
   background-position: center;
   background-size: cover;
   background-repeat: no-repeat;

@@ -3,17 +3,18 @@ export default {
   name: "PageHeader",
   data() {
     return {
+      logoImg: "/src/assets/dc-logo.png",
       links: [
-        "characters",
-        "comics",
-        "movies",
-        "tv",
-        "games",
-        "collectibles",
-        "videos",
-        "fans",
-        "news",
-        "shop",
+        { label: "characters", href: "#" },
+        { label: "comics", href: "#" },
+        { label: "movies", href: "#" },
+        { label: "tv", href: "#" },
+        { label: "games", href: "#" },
+        { label: "collectibles", href: "#" },
+        { label: "videos", href: "#" },
+        { label: "fans", href: "#" },
+        { label: "news", href: "#" },
+        { label: "shop", href: "#" },
       ],
     };
   },
@@ -23,10 +24,10 @@ export default {
 <template>
   <header>
     <div class="container">
-      <img src="../assets/dc-logo.png" alt="Logo" />
+      <img :src="logoImg" alt="Logo" />
       <ul>
         <li v-for="link in links">
-          <a href="">{{ link }}</a>
+          <a :href="link.href">{{ link.label }}</a>
         </li>
       </ul>
     </div>

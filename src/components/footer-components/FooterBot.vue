@@ -7,22 +7,27 @@ export default {
         {
           name: "facebook",
           image: "src/assets/footer-facebook.png",
+          href: "#",
         },
         {
           name: "twitter",
           image: "src/assets/footer-twitter.png",
+          href: "#",
         },
         {
           name: "youtube",
           image: "src/assets/footer-youtube.png",
+          href: "#",
         },
         {
           name: "pinterest",
           image: "src/assets/footer-pinterest.png",
+          href: "#",
         },
         {
           name: "periscope",
           image: "src/assets/footer-periscope.png",
+          href: "#",
         },
       ],
     };
@@ -36,9 +41,9 @@ export default {
       <button>Sign-Up Now!</button>
       <div class="links">
         <h3><a>Follow Us</a></h3>
-        <a v-for="link in links" href=""
-          ><img :src="link.image" alt="link.name"
-        /></a>
+        <a v-for="link in links" :href="link.href">
+          <img :src="link.image" alt="link.name" />
+        </a>
       </div>
     </div>
   </div>
